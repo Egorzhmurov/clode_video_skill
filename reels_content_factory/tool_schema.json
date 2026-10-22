@@ -1,0 +1,119 @@
+{
+  "name": "generate_reels_blueprint",
+  "description": "Generates a production-ready 30-second Instagram Reels blueprint. Call this tool ONLY after asking the user 3 clarifying questions and updating the internal graph.",
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "topic": {
+        "type": "string",
+        "description": "The topic of the Instagram Reel."
+      },
+      "hook_block": {
+        "type": "object",
+        "properties": {
+          "on_screen_text": {
+            "type": "string",
+            "description": "On-screen text in the language requested by the user."
+          },
+          "elevenlabs_voice_prompt": {
+            "type": "string",
+            "description": "Voiceover text in the language requested by the user, including pacing instructions."
+          },
+          "veo3_video_prompt_en": {
+            "type": "string",
+            "description": "English visual description for VEO 3."
+          },
+          "bootstrap_ui_html": {
+            "type": "string",
+            "description": "Apple-style Bootstrap 5 UI markup."
+          },
+          "after_effects_motion": {
+            "type": "string",
+            "description": "Motion specification using standard After Effects expressions."
+          }
+        },
+        "required": [
+          "on_screen_text",
+          "elevenlabs_voice_prompt",
+          "veo3_video_prompt_en",
+          "bootstrap_ui_html",
+          "after_effects_motion"
+        ],
+        "additionalProperties": false
+      },
+      "dynamic_body_block": {
+        "type": "object",
+        "properties": {
+          "on_screen_text": {
+            "type": "string",
+            "description": "On-screen text in the language requested by the user."
+          },
+          "elevenlabs_voice_prompt": {
+            "type": "string",
+            "description": "Voiceover text in the language requested by the user, including pacing instructions."
+          },
+          "veo3_video_prompt_en": {
+            "type": "string",
+            "description": "English visual description for VEO 3."
+          },
+          "bootstrap_ui_html": {
+            "type": "string",
+            "description": "Apple-style Bootstrap 5 UI markup."
+          },
+          "after_effects_motion": {
+            "type": "string",
+            "description": "Motion specification using standard After Effects expressions."
+          }
+        },
+        "required": [
+          "on_screen_text",
+          "elevenlabs_voice_prompt",
+          "veo3_video_prompt_en",
+          "bootstrap_ui_html",
+          "after_effects_motion"
+        ],
+        "additionalProperties": false
+      },
+      "cta_block": {
+        "type": "object",
+        "properties": {
+          "on_screen_text": {
+            "type": "string",
+            "description": "On-screen text in the language requested by the user."
+          },
+          "elevenlabs_voice_prompt": {
+            "type": "string",
+            "description": "Voiceover text in the language requested by the user, including pacing instructions."
+          },
+          "veo3_video_prompt_en": {
+            "type": "string",
+            "description": "English visual description for VEO 3."
+          },
+          "bootstrap_ui_html": {
+            "type": "string",
+            "description": "Apple-style Bootstrap 5 UI markup."
+          },
+          "after_effects_motion": {
+            "type": "string",
+            "description": "Motion specification using standard After Effects expressions."
+          }
+        },
+        "required": [
+          "on_screen_text",
+          "elevenlabs_voice_prompt",
+          "veo3_video_prompt_en",
+          "bootstrap_ui_html",
+          "after_effects_motion"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "required": [
+      "topic",
+      "hook_block",
+      "dynamic_body_block",
+      "cta_block"
+    ],
+    "additionalProperties": false
+  }
+}
